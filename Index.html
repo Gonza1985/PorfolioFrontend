@@ -1,2 +1,78 @@
-<h1>Mi portfolio</h1>
-<p> Modificación en el repositorio remoto </p)
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Document</title>
+    <link href="C:\Gonza\YoProgramo\GIT\Portfolio Frontend\Dist\bootstrap-5.0.1-dist\css\bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+    const personalData = fetch("/backend/personalData");
+</script>
+<body>
+    <HEADER>
+        <center>
+        <h1 id="título">GONZALO RODRIGUEZ</h1>
+        <img src="Mi_foto_2.png">
+        <h1 id="título2">DESARROLLADOR FULL STACK</h1>
+        </center>   
+        <div class="login">
+            <form  action="/formulario" method="get">
+                <label for="nombre"></label>
+                <input type="text" id="usuario" name="nombre" placeholder="Usuario"/>
+                <br>
+                <label for="password"></label>
+                <input type="password" id="password" name="nombre" placeholder="Password"/>        
+                <br>
+                <button type="submit">Log in</button>
+            </form>
+        </div>
+    </HEADER>
+    <div>
+        <div class=row>
+            <div class="column w-40">
+                <!-- for (pd in personalData) -->
+                <div class="column personal-data">
+                    <div><!-- `${personalData.title}: ${personalData.value}` --> <b> Información personal</b></div>
+                    <div>Nombre Completo: Gonzalo Rodriguez</div>
+                    <div>Edad: 36</div>
+                </div>
+                <div class="column personal-description">
+                    <div><b>Un poco de mí</b></div>
+                    <p>Soy Gonzalo Rodriguez, argentino, en pareja hace más de 10 años, no tengo hijos. A mis 36 años luego de más de 17 años trabajando en la industria energética (para una compañía operadora de Oil & Gas) se me despertó el interés por la programación por lo que decidí anotarme en el programa estatal de inicio en el rubro "Argentina Programa" el cual me brindó herramientas para iniciarme en lo que espero sea mi carrera de aquí en más.
+                    </p>
+                </div>                           
+                <div class="column personal-education">
+                    <div><b> Formación</b></div>                   
+                    <div>Argentina Programa: #SeProgramar</div>
+                    <div>Argentina Programa: #YoProgramo</div>
+                </div>
+                <div class="column personal-attributes">
+                    <div><b>Atributos</b></div>
+                    <div>Proactivo</div>
+                    <div>Autodidacta</div>
+                </div>
+            </div>
+            
+            <div class="column w-60">
+                <b> Experiencia Laboral</b>
+                <div class="column job-experience">
+                    <div>17 años en la industria de Oil & Gas</div>
+                </div>
+                <b> Portfolio</b>
+                <div class="column portfolio-item">
+                https://github.com/Gonza1985/PorfolioFrontend.git
+                </div>
+            </div> 
+        </div>
+        
+    </div>
+    
+
+    <footer>
+        <a href="#título">Ir al título</a> <br>
+        <a href="mailto:gonza1985.gr@gmail.com">Contáctame aquí!</a>
+        <p>Copyright 2022</p>
+    </footer>
+</body>
+</html>
