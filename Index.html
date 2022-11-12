@@ -9,14 +9,23 @@
 <script>
     const personalData = fetch("/backend/personalData");
 </script>
+<nav class="nav_bar">
+    <button class="button" type="submit">Log in</button>
+    <button class="button" type="button">Información personal</button>
+    <button class="button" type="button">Descripción personal</button>
+    <button class="button" type="button">Atributos</button>
+    <button class="button" type="button">Formación</button>
+   
+</nav>
 <body>
+    <script src="output/app.js"></script>
     <HEADER>
         <center>
         <h1 id="título">GONZALO RODRIGUEZ</h1>
         <img src="Mi_foto_2.png">
         <h1 id="título2">DESARROLLADOR FULL STACK</h1>
         </center>   
-        <div class="login">
+        <!-- <div class="card">
             <form  action="/formulario" method="get">
                 <label for="nombre"></label>
                 <input type="text" id="usuario" name="nombre" placeholder="Usuario"/>
@@ -24,9 +33,9 @@
                 <label for="password"></label>
                 <input type="password" id="password" name="nombre" placeholder="Password"/>        
                 <br>
-                <button type="submit">Log in</button>
+                <button id="login2" type="submit">Log in</button>
             </form>
-        </div>
+        </div> -->
     </HEADER>
     <div>
         <div class=row>
