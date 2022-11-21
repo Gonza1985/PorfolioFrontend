@@ -3,3 +3,9 @@ Future3.png
 Mi foto 2.png
 App/
 Dist/
+example01.ts
+package-lock.json
+package.json
+tsconfig.json
+output/
+node_modules

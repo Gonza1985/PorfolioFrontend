@@ -2,21 +2,46 @@
 <html>
 <head>
     
-    <title>Document</title>
+    <title>Portfolio Gonzalo</title>
     <link href="C:\Gonza\YoProgramo\GIT\Portfolio Frontend\Dist\bootstrap-5.0.1-dist\css\bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
 </head>
 <script>
-    const personalData = fetch("/backend/personalData");
+ // const personalData = fetch("/backend/personalData");
 </script>
+<nav class="nav_bar">
+    <button class="button" type="submit" id="log"><b>LOG IN</b></button>
+    <button class="button" type="button">
+        <a href="#inf-per">    <b>INFORMACIÓN PERSONAL</b></a>
+    </button>
+    <button class="button" type="button">
+        <a href="#des-per"> <b>DESCRIPCIÓN PERSONAL</b></a>
+    </button>
+    <button class="button" type="button">
+        <a href="#forma"> <b>FORMACIÓN</b></a>
+    </button>
+    <button class="button" type="button">
+        <a href="#atri"> <b>ATRIBUTOS</b></a>
+    </button>
+    <button class="button" type="button">
+        <a href="#exp"> <b>EXPERIENCIA</b></a>
+    </button>
+    <button class="button" type="button">
+        <a href="#port"> <b>PORTFOLIO</b></a>
+    </button>
+
+   
+   
+</nav>
 <body>
+    <script src="output/app.js"></script>
     <HEADER>
         <center>
         <h1 id="título">GONZALO RODRIGUEZ</h1>
         <img src="Mi_foto_2.png">
         <h1 id="título2">DESARROLLADOR FULL STACK</h1>
         </center>   
-        <div class="login">
+        <!-- <div class="card">
             <form  action="/formulario" method="get">
                 <label for="nombre"></label>
                 <input type="text" id="usuario" name="nombre" placeholder="Usuario"/>
@@ -24,30 +49,30 @@
                 <label for="password"></label>
                 <input type="password" id="password" name="nombre" placeholder="Password"/>        
                 <br>
-                <button type="submit">Log in</button>
+                <button id="login2" type="submit">Log in</button>
             </form>
-        </div>
+        </div> -->
     </HEADER>
     <div>
         <div class=row>
             <div class="column w-40">
                 <!-- for (pd in personalData) -->
-                <div class="column personal-data">
+                <div class="column personal-data" id="inf-per">
                     <div><!-- `${personalData.title}: ${personalData.value}` --> <b> Información personal</b></div>
                     <div>Nombre Completo: Gonzalo Rodriguez</div>
                     <div>Edad: 36</div>
                 </div>
-                <div class="column personal-description">
+                <div class="column personal-description" id="des-per">
                     <div><b>Un poco de mí</b></div>
                     <p>Soy Gonzalo Rodriguez, argentino, en pareja hace más de 10 años, no tengo hijos. A mis 36 años luego de más de 17 años trabajando en la industria energética (para una compañía operadora de Oil & Gas) se me despertó el interés por la programación por lo que decidí anotarme en el programa estatal de inicio en el rubro "Argentina Programa" el cual me brindó herramientas para iniciarme en lo que espero sea mi carrera de aquí en más.
                     </p>
                 </div>                           
-                <div class="column personal-education">
+                <div class="column personal-education" id="forma">
                     <div><b> Formación</b></div>                   
                     <div>Argentina Programa: #SeProgramar</div>
                     <div>Argentina Programa: #YoProgramo</div>
                 </div>
-                <div class="column personal-attributes">
+                <div class="column personal-attributes" id="atri">
                     <div><b>Atributos</b></div>
                     <div>Proactivo</div>
                     <div>Autodidacta</div>
@@ -55,12 +80,15 @@
             </div>
             
             <div class="column w-60">
-                <b> Experiencia Laboral</b>
-                <div class="column job-experience">
+                
+                <div class="column job-experience" id="exp">
+                    <b> Experiencia Laboral</b>
+                    <br>
                     <div>17 años en la industria de Oil & Gas</div>
                 </div>
-                <b> Portfolio</b>
-                <div class="column portfolio-item">
+                <div class="column portfolio-item" id="port">
+                    <b> Portfolio</b>
+                    <br>
                 https://github.com/Gonza1985/PorfolioFrontend.git
                 </div>
             </div> 
@@ -70,7 +98,7 @@
     
 
     <footer>
-        <a href="#título">Ir al título</a> <br>
+        <a href="#log">Ir al cielo</a> <br>
         <a href="mailto:gonza1985.gr@gmail.com">Contáctame aquí!</a>
         <p>Copyright 2022</p>
     </footer>
